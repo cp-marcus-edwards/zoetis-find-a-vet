@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zoetis Find-A-Vet Sample</title>
+    <script src="https://searchg2-assets.crownpeak.net/crownpeak.searchg2-1.0.2.min.js"></script>
+  </head>
+  <body>
+    <h1>Find a Vet Sample</h1>
+
+    <div id="app">
+      <find-a-vet
+        collection="zoetis-us-findavet-live"
+        :products="['revolution','proheart6']"
+        :ranges="[10,20,50,100,500]"
+        :defaultRange="10"
+        :usingMiles="true">
+      </find-a-vet>
+    </div>
+
+    <script src="/dist/find-a-vet.js"></script>
+  </body>
+</html>
