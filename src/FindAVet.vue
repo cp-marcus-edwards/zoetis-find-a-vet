@@ -67,8 +67,10 @@ export default {
       return this.usingMiles ? 1.609344 : 1;
     },
     productsFilter: function() {
+      var queries = [];
+      queries.push("custom_s_type:veterinary_practice_data");
       return this.products.map(function (i) {
-        return "custom_ss_products:"+i        
+        queries.push("custom_ss_products:"+i);
       })
     }
   },
